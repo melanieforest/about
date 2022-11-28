@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    color:black;
+    background-color:rgb(242, 239, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.img{
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px rgba(64, 10, 100, 0.50);
+    margin: 10px;
+}
+
+.info{
+    color:rgb(64, 10, 100);
+    font-style: italic;
+    font-weight: 600;
+    margin: 0px 250px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.url{
+    color:rgb(64, 10, 100);
+    text-decoration:underline;
+}
+
+.url:hover{
+    color:rgb(174, 156, 255);
+    text-decoration:none;
+}
+
+.card1{
+    background-color:rgb(210, 201, 249);
+    border: 2px solid rgb(64, 10, 100);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 200px;
+}
+
+.card2{
+    background-color:rgb(210, 201, 249);
+    border: 2px solid rgb(64, 10, 100);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 200px;
+}
+
+.card3{
+    background-color:rgb(210, 201, 249);
+    border: 2px solid rgb(64, 10, 100);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 200px;
+}
+
+.container{
+    max-width: 800;
+}
+
+.table{
+    width: 500px;
+
+}
+
+.table tr:nth-child(1){
+    background-color: rgb(178, 161, 255);
+}
+
+.forms input{
+    float: left;
+    background: transparent;
+    padding: 10px;
+    width: 500px;
+    border: 0;
+    border-bottom: 1px solid rgb(145, 120, 255);
+}
+
