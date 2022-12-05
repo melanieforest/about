@@ -5,7 +5,7 @@ body{
     background-color:rgb(242, 239, 255);
     font-family: 'Roboto', sans-serif;
     font-weight: 400px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .img{
@@ -20,7 +20,7 @@ body{
     font-weight: 600;
     margin: 0px 250px;
     display: flex;
-    /* flex-wrap: wrap; */
+    /*flex-wrap: wrap;*/
 }
 
 .url{
@@ -33,37 +33,23 @@ body{
     text-decoration:none;
 }
 
-.card1{
+.card{
     background-color:rgb(210, 201, 249);
     border: 2px solid rgb(64, 10, 100);
     border-radius: 10px;
     padding: 15px;
-    margin: 5px 200px;
-}
-
-.card2{
-    background-color:rgb(210, 201, 249);
-    border: 2px solid rgb(64, 10, 100);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 5px 200px;
-}
-
-.card3{
-    background-color:rgb(210, 201, 249);
-    border: 2px solid rgb(64, 10, 100);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 5px 200px;
+    margin: 5px 150px;
 }
 
 .container{
-    max-width: 800;
+    max-width: 100000px;
+    margin: auto;
 }
 
 .table{
-    width: 500px;
-
+    width: 50%;
+    margin: 5px;
+    padding: 15px;
 }
 
 .table tr:nth-child(1){
@@ -71,11 +57,90 @@ body{
 }
 
 .forms input{
-    float: left;
-    background: transparent;
-    padding: 10px;
-    width: 500px;
+    font-size: 18px;
+    width: 80%;
     border: 0;
-    border-bottom: 1px solid rgb(145, 120, 255);
+    background-color:rgb(210, 201, 249);
+    border-bottom: 2px solid rgb(178, 161, 255);
+    padding: 10px;
+    margin: 5px;
+    transition: 0.2s;
 }
 
+.forms input:hover{
+    font-size: 16px;
+    background-color: rgb(178, 161, 255); 
+    padding: 25px;
+    margin: 10px 5px;
+    border-color:rgb(178, 161, 255);
+    box-shadow: 4px 4px 14px rgba(64, 10, 100, 0.50);
+}
+
+.forms textarea{
+    font-size: 20px;
+    width: 80%;
+    border: 0;
+    background-color:rgb(210, 201, 249);
+    border-bottom: 2px solid rgb(178, 161, 255);
+    padding: 10px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+.forms textarea:hover{
+    font-size: large;
+    background-color: rgb(178, 161, 255); 
+    padding: 25px;
+    margin: 10px 5px;
+    border-color:rgb(178, 161, 255);
+    box-shadow: 4px 4px 14px rgba(64, 10, 100, 0.50);
+}
+
+.forms button{
+    font-size: large;
+    background-color: rgb(178, 161, 255); 
+    padding: 25px;
+    margin: 5px;
+    border-color: rgb(136, 98, 160);
+    transition: 0.2s;
+}
+
+.forms button:hover{
+    font-size: large;
+    background-color: rgb(178, 161, 255); 
+    padding: 25px;
+    margin: 10px 5px;
+    border-color:rgb(178, 161, 255);
+    box-shadow: 4px 4px 14px rgba(64, 10, 100, 0.50);
+}
+
+@media (max-width: 810px) {
+    .img{
+        align-self: center;
+        width: 300px;
+
+    }
+    
+    .info{
+        height: 100vh;
+        flex-direction: column;
+        margin: 5px 15px;
+    }
+    
+    .card{
+        height: 60vh;
+        border-radius: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .table{
+        width: 100%;
+        margin: 5px;
+        padding: 15px;
+    }
+}
